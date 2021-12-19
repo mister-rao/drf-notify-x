@@ -1,17 +1,9 @@
 from django import dispatch
 from django.dispatch import receiver
 from notify.models import Notification
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext_lazy as _
 
-
-notify = dispatch.Signal(providing_args=[
-    'recipient', 'recipient_list',
-    'actor', 'actor_text', 'actor_url',
-    'verb', 'description', 'nf_type',
-    'target', 'target_text', 'target_url',
-    'obj', 'obj_text', 'obj_url',
-    'extra',
-])
+notify = dispatch.Signal()
 
 
 @receiver(notify, dispatch_uid='notify_user')
@@ -49,10 +41,6 @@ def notifier(sender, **kwargs):
 
     if not verb:
         raise TypeError(_("Verb not specified."))
-
-    if verb:
-        if len(verb) > Notification._meta.get_field('verb').max_length:
-            raise ValueError(_("Verb is too long."))
 
     if recipient_list and not isinstance(recipient_list, list):
         raise TypeError(_("Supplied recipient is not an instance of list."))

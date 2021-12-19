@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-15 10:15-0600\n"
+"POT-Creation-Date: 2015-12-21 09:37-0200\n"
 "PO-Revision-Date: 2015-12-20 15:27-0200\n"
 "Last-Translator: Fernando Macedo <fgmacedo@gmail.com>\n"
 "Language: pt_BR\n"
@@ -16,138 +16,134 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\notify\models.py:194
+#: models.py:167
 msgid "Notification receiver"
 msgstr "Receptor da notificação"
 
-#: .\notify\models.py:200
+#: models.py:173
 msgid "Content type of actor object"
 msgstr "Tipo de conteúdo do objeto ator"
 
-#: .\notify\models.py:204
+#: models.py:177
 msgid "ID of the actor object"
 msgstr "ID do objeto ator"
 
-#: .\notify\models.py:211
+#: models.py:184
 msgid "Anonymous text for actor"
 msgstr "Texto anônimo para o ator"
 
-#: .\notify\models.py:215
+#: models.py:188
 msgid "Anonymous URL for actor"
 msgstr "URL anônima para o ator"
 
-#: .\notify\models.py:219
+#: models.py:192
 msgid "Verb of the action"
 msgstr "Verbo da ação"
 
-#: .\notify\models.py:223
+#: models.py:196
 msgid "Description of the notification"
 msgstr "Descrição da notificação"
 
-#: .\notify\models.py:226
+#: models.py:199
 msgid "Type of notification"
 msgstr "Tipo da notificação"
 
-#: .\notify\models.py:234
+#: models.py:207
 msgid "Content type of target object"
 msgstr "Tipo de conteúdo do objeto alvo"
 
-#: .\notify\models.py:238 .\notify\models.py:259
+#: models.py:211 models.py:232
 msgid "ID of the target object"
 msgstr "ID do objeto alvo"
 
-#: .\notify\models.py:245
+#: models.py:218
 msgid "Anonymous text for target"
 msgstr "Texto anônimo para o alvo"
 
-#: .\notify\models.py:249
+#: models.py:222
 msgid "Anonymous URL for target"
 msgstr "URL anônima para o alvo"
 
-#: .\notify\models.py:255
+#: models.py:228
 msgid "Content type of action object"
 msgstr "Tipo de conteúdo para o objeto da ação"
 
-#: .\notify\models.py:265
+#: models.py:238
 msgid "Anonymous text for action object"
 msgstr "Texto anônimo para o objeto da ação"
 
-#: .\notify\models.py:269
+#: models.py:242
 msgid "Anonymous URL for action object"
 msgstr "URL anônima para o objeto da ação"
 
-#: .\notify\models.py:272
+#: models.py:245
 msgid "JSONField to store addtional data"
 msgstr "Campo JSON para armazenar dados adicionais"
 
-#: .\notify\models.py:277
+#: models.py:250
 msgid "Read status"
 msgstr "Status da leitura"
 
-#: .\notify\models.py:279
+#: models.py:252
 msgid "Soft delete status"
 msgstr "Status da exclusão lógica"
 
-#: .\notify\models.py:298
+#: models.py:271
 #, python-brace-format
 msgid "{actor} {verb} {at} ago"
 msgstr "{actor} {verb} {at} atrás"
 
-#: .\notify\models.py:300
+#: models.py:273
 #, python-brace-format
 msgid "{actor} {verb} on {target} {at} ago"
 msgstr "{actor} {verb} em {target} {at} atrás"
 
-#: .\notify\models.py:303
+#: models.py:275
 #, python-brace-format
 msgid "{actor} {verb} {obj} on {target} {at} ago"
 msgstr "{actor} {verb} {obj} em {target} {at} atrás"
 
-#: .\notify\models.py:304
+#: models.py:276
 #, python-brace-format
 msgid "{description} -- {at} ago"
 msgstr "{description} -- {at} atrás"
 
-#: .\notify\signals.py:42
+#: signals.py:42
 msgid ""
 "You must specify either a single recipient or a list of recipients, not both."
 msgstr ""
 "Você deve especificar ou um único destinatário, ou uma lista de "
 "destinatários, não os dois."
 
-#: .\notify\signals.py:45
+#: signals.py:45
 msgid "You must specify the recipient of the notification."
 msgstr "Você deve especificar o destinatário da notificação."
 
-#: .\notify\signals.py:48
+#: signals.py:48
 msgid "Actor not specified."
 msgstr "Ator não especificado."
 
-#: .\notify\signals.py:51
+#: signals.py:51
 msgid "Verb not specified."
 msgstr "Verbo não especificado."
 
-#: .\notify\signals.py:55
-msgid "Verb is too long."
-msgstr "Verbo é muito longo."
-
-#: .\notify\signals.py:58
+#: signals.py:54
 msgid "Supplied recipient is not an instance of list."
 msgstr "O destinatário fornecido não é uma lista."
 
-#: .\notify\templates\notifications\all.html:4
+#: templates/notifications/all.html:4
 msgid "Notifications"
 msgstr "Notificações"
 
-#: .\notify\templates\notifications\all.html:7
+#: templates/notifications/all.html:7
 msgid "Mark all as read"
 msgstr "Marcar todas como lidas"
 
-#: .\notify\templates\notifications\all.html:8
+#: templates/notifications/all.html:8
 msgid "Mark all as unread"
 msgstr "Marcar todas como não lidas"
 
-#: .\notify\templates\notifications\includes\default.html:5
+#: templates/notifications/includes/default.html:5
 #, python-format
 msgid ""
 "\n"
@@ -160,7 +156,7 @@ msgstr ""
 "\"%(target_url)s\">%(target)s</a>\n"
 "        "
 
-#: .\notify\templates\notifications\includes\default.html:9
+#: templates/notifications/includes/default.html:9
 #, python-format
 msgid ""
 "\n"
@@ -168,99 +164,99 @@ msgid ""
 "        "
 msgstr ""
 
-#: .\notify\templates\notifications\includes\default.html:13
+#: templates/notifications/includes/default.html:13
 #, python-format
 msgid "%(created)s ago"
 msgstr "%(created)s atrás"
 
-#: .\notify\templates\notifications\includes\default.html:17
+#: templates/notifications/includes/default.html:17
 msgid "read,unread"
 msgstr "lida,não lida"
 
-#: .\notify\templates\notifications\includes\default.html:17
-#: .\notify\templates\notifications\includes\default.html:18
+#: templates/notifications/includes/default.html:17
+#: templates/notifications/includes/default.html:18
 #, python-format
 msgid "Mark as %(read)s"
 msgstr "Marcar como %(read)s"
 
-#: .\notify\templates\notifications\includes\default.html:18
+#: templates/notifications/includes/default.html:18
 msgid "unread,read"
 msgstr "não lida,lida"
 
-#: .\notify\templatetags\notification_tags.py:28
-#: .\notify\templatetags\notification_tags.py:35
+#: templatetags/notification_tags.py:23 templatetags/notification_tags.py:30
 #, python-format
 msgid "The second argument in %r must be 'for'"
 msgstr "O segundo argumento em %r deve ser 'for'"
 
-#: .\notify\templatetags\notification_tags.py:39
+#: templatetags/notification_tags.py:34
 #, python-brace-format
 msgid "{tag} takes 2 or 3 arguments, {len} given."
 msgstr "{tag} requer 2 ou 3 argumentos, {len} recebidos."
 
-#: .\notify\templatetags\notification_tags.py:58
+#: templatetags/notification_tags.py:53
 msgid "<b>No notifications yet.</b>"
 msgstr "<b>Sem notificações ainda.</b>"
 
-#: .\notify\templatetags\notification_tags.py:140
+#: templatetags/notification_tags.py:135
 msgid "Max arguments are two"
 msgstr "Máximo de 2 argumentos"
 
-#: .\notify\templatetags\notification_tags.py:142
+#: templatetags/notification_tags.py:137
 msgid "First argument must be 'for'"
 msgstr "O primeiro argumento deve ser 'for'"
 
-#: .\notify\templatetags\notification_tags.py:145
+#: templatetags/notification_tags.py:140
 msgid "Second argument must either 'box' or 'page'"
 msgstr "Segundo argumento deve ser ou 'box' ou 'page'"
 
-#: .\notify\views.py:80
+#: views.py:75
 msgid "Marked as read"
 msgstr "Marcado como lida"
 
-#: .\notify\views.py:83
+#: views.py:78
 msgid "Marked as unread"
 msgstr "Marcado como não lida"
 
-#: .\notify\views.py:86
+#: views.py:81
 msgid "Invalid mark action."
 msgstr "Marcação inválida."
 
-#: .\notify\views.py:89 .\notify\views.py:160
+#: views.py:84 views.py:155
 msgid "Notification does not exists."
 msgstr "Não existem notificações."
 
-#: .\notify\views.py:92 .\notify\views.py:163
+#: views.py:87 views.py:158
 msgid "Invalid Notification ID"
 msgstr "ID de notificação inválida"
 
-#: .\notify\views.py:115
+#: views.py:110
 msgid "Marked all notifications as read"
 msgstr "Todas as notificações marcadas como lidas"
 
-#: .\notify\views.py:118
+#: views.py:113
 msgid "Marked all notifications as unread"
 msgstr "Todas as notificações marcadas como não lidas"
 
-#: .\notify\views.py:120
+#: views.py:115
 msgid "Invalid mark action"
 msgstr "Marcação inválida."
 
-#: .\notify\views.py:157
+#: views.py:152
 msgid "Deleted notification successfully"
 msgstr "Notificação apagada com sucesso"
 
-#: .\notify\views.py:241
+#: views.py:237
 msgid "Notifications successfully retrieved."
 msgstr "Notificação obtida com sucesso."
 
-#: .\notify\views.py:242
+#: views.py:238
 msgid "No new notifications."
 msgstr "Sem novas notificações."
 
-#: .\notify\views.py:261
+#: views.py:257
+msgid "Invalid notification flag"
+msgstr "Sinalizador de notificação inválido."
+
+#: views.py:259
 msgid "Notification flag not sent."
 msgstr "Sinalizador de notificação não enviado."
-
-#~ msgid "Invalid notification flag"
-#~ msgstr "Sinalizador de notificação inválido."
